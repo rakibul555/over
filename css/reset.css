@@ -1,0 +1,336 @@
+/*! HTML5 Boilerplate version 1.0.0 | MIT License | It's free and comfort usable */
+
+/* reset.css 1.0.0 | RAKIBUL ISLAM
+/*
+ *It's default CSS use in website and cross-browser styling. This code collects in
+  HTML5 and CSS3 this class flowing and create a website in a simple time!
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+
+  html,body {
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #222;
+    font-weight: 400;
+    line-height: 1.7em;
+    vertical-align: baseline;
+    width: 100%;
+    height: 100%;
+    font: inherit;
+
+/* ==========================================================================
+    transiton for crossing browser
+   ========================================================================== */
+   transition: all .3s ease-in-out;
+   -webkit-transition: all .3s ease-in-out;
+   -moz-transition: all .3s ease-in-out;
+   -o-transition: all .3s ease-in-out;
+   -ms-transition: all .3s ease-in-out;
+  }
+
+
+
+/*
+ * div default margin and padding none 
+ */
+div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/*
+ * Remove the margin in all browsers.
+ */
+
+ * {
+    padding: 0;
+    margin: 0;
+  }
+
+
+
+/*
+* Customize the background color to match your design.
+*/
+ 
+ ::-moz-selection {
+   background: #b3d4fc;
+   text-shadow: none;
+ }
+
+
+/*
+/* a tag default design
+*/
+
+a{
+    text-decoration: none !important;
+    cursor: pointer;
+    color: #FF5722;
+}
+
+/*
+/* (h1-h6) tag default design
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-size: normal;
+    position: relative;
+    margin: 0;
+    background: none;
+    line-height: 1.7em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*
+/* p tag default design
+*/
+
+p {
+    position: relative;
+    line-height: 1.7em;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+/* ul li tag default design
+*/
+
+ul,
+li {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/*
+ * Remove default fieldset styles.
+ */
+
+ fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+/*
+ * images style display and max width
+ * remove iamges default widht
+ */
+
+  img {
+    display: inline-block;
+    max-width: 100%;
+    max-height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================================================
+* ::placeholder catch
+* input box catch and simple color and modify
+ ========================================================================== */
+::-webkit-input-placeholder { /* Edge */
+    color: #ddd;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ddd;
+  }
+  
+  ::placeholder {
+    color: #ddd;
+  }
+
+  
+/**
+ * input box outline and focus none
+ */
+  textarea:focus, input:focus{
+    outline: none;
+}
+
+/**
+ * input box focus
+ */
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=text]:focus {
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+
+  textarea:focus, input:focus{
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+input:focus {
+    outline:none;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number] {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+
+/**
+ * simple style in btn class
+ */
+
+.btn{
+    background: #FF5722;
+    color: #fff;
+    border-radius: 0px;
+    padding: 6px 17px;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+/* ==========================================================================
+* all text style apply in webste
+* t-right t-left t-center t-uppercase t-lowercase t-capitalize
+ ========================================================================== */
+
+.t-right{
+    text-align: right !important;
+}
+.t-left{
+    text-align: left !important;
+}
+.t-center{
+    text-align: center !important;
+}
+.t-uppercase{
+    text-transform: uppercase !important;
+}
+
+.t-lowercase{
+    text-transform: lowercase !important;
+}
+.t-capitalize{
+    text-transform: capitalize !important;
+}
+
+.s-padding{
+    padding-top: 100px !important;
+}
+
+
+/**
+ * Clear fix use of two div as both
+ */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/**
+ * Fix class
+ */
+.fix{
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+ [type="number"]::-webkit-inner-spin-button,
+ [type="number"]::-webkit-outer-spin-button {
+   height: auto;
+ }
+ 
+ /**
+  * 1. Correct the odd appearance in Chrome and Safari.
+  * 2. Correct the outline style in Safari.
+  */
+ 
+ [type="search"] {
+   -webkit-appearance: textfield; /* 1 */
+   outline-offset: -2px; /* 2 */
+ }
+ 
+ /**
+  * Remove the inner padding in Chrome and Safari on macOS.
+  */
+ 
+ [type="search"]::-webkit-search-decoration {
+   -webkit-appearance: none;
+ }
+ 
+ /**
+  * 1. Correct the inability to style clickable types in iOS and Safari.
+  * 2. Change font properties to `inherit` in Safari.
+  */
+ 
+ ::-webkit-file-upload-button {
+   -webkit-appearance: button; /* 1 */
+   font: inherit; /* 2 */
+ }
+
+
+ /**
+ * Any class div section even any website hide this class use
+ */
+.hide{
+    display: none !important;
+}
+/* ===================================0END0==================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
